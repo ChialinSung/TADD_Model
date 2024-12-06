@@ -1,22 +1,22 @@
-# NDA-Detector
+# TADD model
 
 ## Introduction
-This repository is a pytorch implementation of the paper "NDA-Detector: Non-local dual attention detector for thermal protection material defect detection", the code is a copy from the private repository of our engineering project, the code will be made public after removing sensitive information.
+This repository is a pytorch implementation of the paper "TADD Model: Texture-enhanced Attention Defect Detection Model for Thermal Protection Materials", the code is a copy from the private repository of our engineering project, the code will be made public after removing sensitive information.
 
 ## Abstract
-Thermal protection materials are widely used in the aerospace field. Existing generic object detection models have defect detection difficulty in thermal protection materials due to the similarity between defects and background, tiny area and multi-scale characteristics. This paper proposes a novel non-local dual attention(NDA)-detector, which achieves accurate and real-time defect detection for thermal protection materials. First, skip connection, atrous convolution and adaptive average pooling are employed to improve the texture enhanced module to enhance concealed defect textures and features. Second, the proposed non-local dual attention(NDA) addresses the problem of severe loss of features for tiny defects. Finally, the path aggregation network fuses the NDA improves the detector's ability to detect multi-scale defects. The experiments on the presented digital radiography dataset show that our detector obtains a 54.74% mAP@0.5 with at least 25 frames per second. Compared to the original detector used in the evaluation, mAP@0.5 is improved by 11.05%. Furthermore, a publicly available dataset was utilized to verify the effectiveness of the proposed method. Thus, NDA-detector exhibits considerable potential in the field of defect detection for thermal protection materials.
+Thermal protection materials are widely used in the aerospace field, where detecting internal defects is crucial for ensuring spacecraft structural integrity and safety in extreme temperature environments. Existing detection models struggle with these materials due to challenges like defect-background similarity, tiny size, and multi-scale characteristics. Besides, there is a lack of defect datasets in real-world scenarios. To address these issues, we first construct a thermal protection material digital radiographic (DR) image dataset (TPMDR-dataset), which contains 670 images from actual production and 6,269 defect instances annotated under expert guidance. And we propose an innovative texture-enhanced attention defect detection (TADD) model that enables accurate, efficient, and real-time defect detection. To implement the TADD model, we design a texture enhancement module that can enhance the concealed defect textures and features. Then we develop a non-local dual attention module to address the issue of severe feature loss in tiny defects. Moreover, we improve the model's ability to detect multi-scale defects through a path aggregation network. The evaluation on the TPMDR-dataset and public dataset shows that the TADD model achieves a higher mean Average Precision (mAP) compared to other methods while maintaining 25 frames per second, exceeding the baseline model by 11.05\%.
 
 ## Timeline:
 Project creation date: 5/8/2023
 
 Creation of this repository: 11/14/2023
 
-Article Submitted: 5/7/2024
+Article Submitted: 6/12/2024
 
 Project Status Display: 7/2/2024
 
 ## Project Status
-We have built the thermal protection material defect AI recognition platform based on the NDA-detector model, and we now publish the details of the platform as follows.
+We have built the thermal protection material defect AI recognition platform based on the TADD model, and we now publish the details of the platform as follows.
 
 Figure 1 shows the technology stack of the platform
 ![](https://github.com/ChialinSung/NDA-Detector/blob/main/show_images/%E5%B9%B3%E5%8F%B0.png)
